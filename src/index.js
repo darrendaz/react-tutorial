@@ -10,7 +10,9 @@ import NameForm from "./form";
 import LongForm from "./long-form";
 import FlavorForm from "./select-form";
 import Calculator from "./temp-calculator";
+import {Dialog, SignUpDialog, WelcomeDialog} from "./composition-inheritance";
 import './index.css';
+
 
 
 class Clock extends React.Component {
@@ -56,7 +58,11 @@ function App() {
 
     return (
         <div>
-            <Calculator />
+            <SignUpDialog/>
+            <WelcomeDialog />
+            <Dialog>
+                <Calculator />
+            </Dialog>
             <NumberList numbers={numbers}/>
             <NameForm />
             <LongForm />
@@ -71,7 +77,6 @@ function App() {
             <Clock />
             <Toggle />
             <Page />
-
 
         </div>
     );
