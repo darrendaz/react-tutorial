@@ -9,6 +9,7 @@ import {Blog} from "./blog";
 import NameForm from "./form";
 import LongForm from "./long-form";
 import FlavorForm from "./select-form";
+import Calculator from "./temp-calculator";
 import './index.css';
 
 
@@ -55,6 +56,7 @@ function App() {
 
     return (
         <div>
+            <Calculator />
             <NumberList numbers={numbers}/>
             <NameForm />
             <LongForm />
